@@ -1,0 +1,51 @@
+<div class="ui container">
+
+<div class="ur" style="width: 50%; float: left;">
+
+<div class="ui inverted purple segment"  >
+
+<h4 class="ui horizontal divider header">
+    <i class="tag icon"></i>
+    Ingredients
+  </h4>
+  <p *ngIf="food">{{ food.ingredients }}</p>
+  <h4 class="ui horizontal divider header">
+    <i class="bar chart icon"></i>
+    Details
+  </h4>
+  <table class="ui definition table" >
+    <tbody>
+      <tr>
+        <td class="two wide column">Origin</td>
+        <td>{{ food?.origins }}</td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>{{ food?.name }}</td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td>{{ food?.price }}</td>
+      </tr>
+      <tr>
+        <td>Cooking Time</td>
+        <td>{{ food?.cookTime }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+</div>
+
+<!-----Image and button -->
+<div class="ui centered card">
+    <div class="image" style="width: 100%; overflow:  hidden; height: 270px;">
+      <img src="{{food?.imageURL}}">
+    </div>
+    <div class="content">
+        <button class="fluid ui black button">Add to Cart</button>
+    </div>
+  </div>
+<!------------------------>
+</div>

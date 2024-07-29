@@ -1,0 +1,3 @@
+    src="{{food}}"
+
+    <div *ngFor = "let food of foods" class="ui link cards"></div>

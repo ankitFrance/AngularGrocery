@@ -1,0 +1,17 @@
+
+
+.card .image {
+    width: 100%; /* Ensure the container fills the width of the card */
+    height: 190px; /* Set a fixed height for the image container */
+    overflow: hidden; /* Hide any overflow to maintain card layout */
+   
+}
+
+.custom{
+    display: flex;
+    justify-content: space-evenly; /* Adjust as needed */
+    padding-bottom: 25px;
+    padding-top: 25px;
+    flex-wrap: wrap; 
+}
+

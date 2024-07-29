@@ -1,0 +1,66 @@
+<!--------------------------------------Search Box----------------------------------------------------------------->
+
+<div class="ui container" style="width: 500px; padding-top: 25px;">
+<div class="ui inverted black segment">
+  <div class="ui inverted transparent icon input">
+    <input 
+      type="text" 
+      placeholder="Search for foods..." 
+      [(ngModel)]="searchTerm"
+      (input)="filterFoods()"
+      
+    >
+  </div>
+</div>
+</div>
+
+<!--------------------------------------CARD----------------------------------------------------------------->
+
+<div class="ui container">
+<div class="ui link cards custom">
+    <div *ngFor = "let food of filteredFoods| paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="card">
+      <div class="image">
+        <img src="{{food.imageURL}}">
+      </div>
+      <div class="content">
+        
+        <div class="header" >{{food.name}}
+          <div class="right floated">
+
+            <button class="ui black button" (click)="goToDishDetail(food.id)">Buy</button>
+            
+          </div>
+        </div>
+        <div class="meta">
+          <a style="color: orangered; font-weight: bold ;">{{food.price | currency}}</a>
+        </div>
+
+        
+     
+        <div class="description">
+          Matthew is an interior designer living in New York.
+        </div>
+      </div>
+      <div class="extra content">
+        <span class="right floated" style="color: rgb(22, 22, 210); font-weight: bold ;">
+          <i class="clock icon"></i>
+          {{food.cookTime}}
+        </span>
+        <span style="color: rgb(22, 22, 210); font-weight: bold ;">
+          <i class="flag icon"></i>
+          {{food.origins}}
+        </span>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<!--------------------------------------Pagination----------------------------------------------------------------->
+<div class="pageinate" style="display: flex; align-items: center; justify-content: center;">
+  <pagination-controls style="justify-content: center;" (pageChange)="p = $event"></pagination-controls>
+</div>
+
+
+
+
