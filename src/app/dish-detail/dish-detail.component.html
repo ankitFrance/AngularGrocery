@@ -2,7 +2,7 @@
 
 <div class="ur" style="width: 50%; float: left;">
 
-<div class="ui inverted purple segment"  >
+<div class="ui inverted black segment"  >
 
 <h4 class="ui horizontal divider header">
     <i class="tag icon"></i>
@@ -44,8 +44,8 @@
       <img src="{{food?.imageURL}}">
     </div>
     <div class="content">
-        <button class="fluid ui black button">Add to Cart</button>
+        <button class="fluid ui black button" (click)="AddedToCart(food?.id ?? 0)">Add to Cart</button>
     </div>
-  </div>
+</div>
 <!------------------------>
 </div>

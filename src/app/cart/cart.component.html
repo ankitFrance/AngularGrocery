@@ -1,0 +1,29 @@
+
+
+<div class="ui container">
+
+    <table class="ui inverted black table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Remove product</th>
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of cartWithDetails">
+        <tr >
+          <td>{{ item.id }}</td>
+          <img style="height: 100px;  overflow: hidden; width: 100px;" src="{{item.imageURL}}">
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }}</td>
+          <td><button class="ui red button">Remove From cart</button></td>
+         
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
