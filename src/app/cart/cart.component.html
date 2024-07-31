@@ -19,7 +19,7 @@
           <img style="height: 100px;  overflow: hidden; width: 100px;" src="{{item.imageURL}}">
           <td>{{ item.name }}</td>
           <td>{{ item.price }}</td>
-          <td><button class="ui red button">Remove From cart</button></td>
+          <td><button class="ui red button"(click)="removeFromCart(item.id)">Remove From cart</button></td>
          
         </tr>
       </tbody>
