@@ -39,11 +39,9 @@
           <img style="height: 100px;  overflow: hidden; width: 100px;" src="{{item.imageURL}}">
           <td>{{ item.name }}</td>
           <td>{{ item.price }}</td>
-          <td>
-            
-          </td>
+          
           <td><button class="ui red button" (click)="removeFromCart(item.id)">Delete</button></td>
-         
+          
         </tr>
       </tbody>
     </table>
@@ -55,4 +53,10 @@
   <div *ngIf="cartWithDetails.length === 0" class="ui message" style="display: flex; align-items: center; justify-content: center;">
   
     <p>Your cart is empty.</p>
+  </div>
+
+
+
+  <div *ngIf="showMessage" style="display: flex; justify-content: center; align-items: center; height: 30px; width: 400px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="ui green message">
+    Product has been removed from cart
   </div>

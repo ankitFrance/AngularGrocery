@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   drinkCount: number = 0;
   fruitCount: number = 0;
   vegetableCount: number = 0;
- 
+  showAllCount: number = 0; // Added count for "Show all"
  
     constructor (private fs: FoodService , private router: Router)  {
 
@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.foods = this.fs.getAll();
     this.filteredFoods = [...this.foods];
+    this.showAllCount = this.foods.length; // Initialize total count
     this.updateCounts()
   
 }
@@ -49,6 +50,7 @@ filterFoods(): void {
     this.filteredFoods = [...this.foods];
   }
   console.log('Filtered Foods:', this.filteredFoods); // Debugging log
+  
 }
 
 
@@ -57,17 +59,21 @@ filterByCategory(category: string): void {
     food.categ.toLowerCase() === category.toLowerCase()
   );
   this.p = 1; // Reset pagination to first page
+  
 }
 
 showAll(): void {
+
   this.filteredFoods = [...this.foods];
   this.p = 1; // Reset pagination to first page
+  
 }
 
 updateCounts(): void {
   this.drinkCount = this.foods.filter(food => food.categ === 'drink').length;
   this.fruitCount = this.foods.filter(food => food.categ === 'fruits').length;
   this.vegetableCount = this.foods.filter(food => food.categ === 'vegetable').length;
+  
 }
 
 goToDishDetail(id: number) {

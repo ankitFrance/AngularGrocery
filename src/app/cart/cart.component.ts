@@ -17,6 +17,7 @@ export class CartComponent implements OnInit {
   cartWithDetails: Foods[] = [];
   totalPriceGlobal : number =0; //total price
   Storetotal: number = 0;
+  showMessage: boolean = false;
 
   constructor(private cartService: CartServiceService , private foodService: FoodService) {}
   ngOnInit(){
@@ -57,6 +58,13 @@ export class CartComponent implements OnInit {
 
     this.cartService.updateCartLength();
     console.log('remaining',this.cartWithIds)
+
+    this.showMessage = true;
+
+    // Hide the message after 1 second
+    setTimeout(() => {
+      this.showMessage = false;
+    }, 600);
 
   }
 

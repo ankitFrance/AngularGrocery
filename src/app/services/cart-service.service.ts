@@ -13,7 +13,7 @@ export class CartServiceService {
    cartLength$: Observable<number> = this.cartLengthSubject.asObservable();
     
    //***** */
-
+   showMsg: boolean = false;
 
 
   constructor() {
@@ -33,6 +33,9 @@ export class CartServiceService {
     this.saveCart(); // Save cart data to local storage
     console.log('MY REAL CART', this.cart);
     this.updateCartLength()
+
+    
+   
   }
 
   // Getter

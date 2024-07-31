@@ -16,6 +16,7 @@ export class DishDetailComponent implements OnInit {
   
   
   food: Foods | undefined;
+  showMsg: boolean= false;
 
   constructor(private route: ActivatedRoute, private foodService: FoodService , private cartService: CartServiceService) { }
 
@@ -28,5 +29,12 @@ export class DishDetailComponent implements OnInit {
 
   AddedToCart(id : number){
     this.cartService.setCart(id);
+
+    this.showMsg = true;
+
+    // Hide the message after 1 second
+    setTimeout(() => {
+      this.showMsg = false;
+    }, 600);
   }
 }
