@@ -1,6 +1,6 @@
 
 
-<div class="ui container" style="margin-top: 20px;  display: flex; flex-direction: column;" >
+<div class="ui container" *ngIf="cartWithDetails.length > 0" style="margin-top: 20px;  display: flex; flex-direction: column;" >
 
   <!--------Card-------------------------------------------------->
   <div class="ui cards" style="margin-left: auto;">
@@ -22,7 +22,7 @@
   
 <!--------Card-------------------------------------------------->
 
-    <table class="ui inverted black table">
+    <table  class="ui inverted black table">
       <thead>
         <tr>
           <th>ID</th>
@@ -49,4 +49,10 @@
     </table>
 
 
+  </div>
+
+
+  <div *ngIf="cartWithDetails.length === 0" class="ui message" style="display: flex; align-items: center; justify-content: center;">
+  
+    <p>Your cart is empty.</p>
   </div>
