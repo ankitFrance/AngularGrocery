@@ -18,10 +18,13 @@
 
 <!--------------------------------Buttons------------------------>
 <div class="ui container" style=" padding-top: 25px; display: flex; justify-content: space-evenly; align-items: center;" >
-  <button class="ui orange basic button" (click)="filterByCategory('fruits')">Fruits</button>
-  <button class="ui orange basic button" (click)="filterByCategory('vegetable')">Vegetables</button>
-  <button class="ui orange basic button" (click)="filterByCategory('drink')">Cold drinks</button>
-  <button class="ui orange basic button" (click)="showAll()">Show All</button>
+ 
+<a class="ui orange label" (click)="filterByCategory('drink')"> Drinks <div class="detail">{{drinkCount}}</div> </a>
+<a class="ui orange label" (click)="filterByCategory('fruits')"> Fruits <div class="detail">{{fruitCount}}</div> </a>
+<a class="ui orange label" (click)="filterByCategory('vegetable')"> Vegetables <div class="detail">{{vegetableCount}}</div> </a>
+<a class="ui orange label" (click)="showAll()"> Show all <div class="detail">{{filteredFoods.length}}</div> </a>
+
+    
 </div>
 <!------------------------------------------------------------->
 
