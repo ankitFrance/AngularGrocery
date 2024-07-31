@@ -19,51 +19,29 @@ export class CartComponent implements OnInit {
   constructor(private cartService: CartServiceService , private foodService: FoodService) {}
   ngOnInit(){
 
-      
+    this.cartWithIds = this.cartService.getCart();
+    //console.log('in cart route', this.cartWithIds);
     this.loadCart();
       
   }
 
   loadCart() {
-    this.cartWithIds = this.cartService.getCart();
-    console.log('in cart route', this.cartWithIds);
 
     const allFoods = this.foodService.getAll();
     this.cartWithDetails = this.cartWithIds.map(id => allFoods.find(food => food.id === id)!);
-    console.log('Cart Contents with Details:', this.cartWithDetails);
+    //console.log('Cart Contents with Details:', this.cartWithDetails);
   }
 
-  againloadCart(){
-    const allFoods = this.foodService.getAll();
-    this.cartWithDetails = this.cartWithIds.map(id => allFoods.find(food => food.id === id)!);
-    console.log('Cart Contents with Details:', this.cartWithDetails);
-  }
+  
 
   removeFromCart(itemId: number): void {
-    // Retrieve the current cart from localStorage
-    const cart = localStorage.getItem('cart');
-    
-    
-    if (cart) {
-      // Parse the cart from localStorage
-      let cartArray: number[] = JSON.parse(cart);
-      
 
-      // Remove the item with the specified itemId
-      cartArray = cartArray.filter(id => id !== itemId);
-      console.log(cartArray)
+    this.cartService.cart = this.cartService.cart.filter(item => item !== itemId);
+    this.cartService.saveCart();
+    this.cartWithIds = this.cartService.getCart();
+    this.loadCart();
 
-       // Update localStorage with the new cart
-      localStorage.setItem('cart', JSON.stringify(cartArray));
 
-      this.cartWithIds =  cartArray;
-
-      this.againloadCart()
-
-     
-
-      
-    }
   }
 
 }

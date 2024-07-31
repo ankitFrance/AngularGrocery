@@ -1,14 +1,21 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartServiceService {
 
-  private cart: number[] = [];  
+   cart: number[] = [];  
+
+
 
   constructor() {
-    this.loadCart(); // Load cart data from local storage when service is instantiated
+    
+    if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
+
+    this.loadCart(); 
+
+    }
   }
  
 
@@ -16,7 +23,7 @@ export class CartServiceService {
    setCart(foodId: number) {
     this.cart.push(foodId);
     this.saveCart(); // Save cart data to local storage
-    console.log(this.cart);
+    console.log('MY REAL CART', this.cart);
   }
 
   // Getter
@@ -25,8 +32,9 @@ export class CartServiceService {
   }
 
   // Save cart data to local storage
-  private saveCart() {
+   saveCart() {
     localStorage.setItem('cart', JSON.stringify(this.cart));
+    console.log(localStorage)
   }
 
   // Load cart data from local storage
@@ -36,4 +44,7 @@ export class CartServiceService {
       this.cart = JSON.parse(savedCart);
     }
   }
+
+
+  
 }
