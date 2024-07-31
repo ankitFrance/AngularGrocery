@@ -1,4 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
+import {  BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,12 @@ import { EventEmitter, Injectable } from '@angular/core';
 export class CartServiceService {
 
    cart: number[] = [];  
+   
+   //*** */
+   private cartLengthSubject: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+   cartLength$: Observable<number> = this.cartLengthSubject.asObservable();
+    
+   //***** */
 
 
 
@@ -14,6 +21,7 @@ export class CartServiceService {
     if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
 
     this.loadCart(); 
+    this.updateCartLength();
 
     }
   }
@@ -24,6 +32,7 @@ export class CartServiceService {
     this.cart.push(foodId);
     this.saveCart(); // Save cart data to local storage
     console.log('MY REAL CART', this.cart);
+    this.updateCartLength()
   }
 
   // Getter
@@ -35,6 +44,7 @@ export class CartServiceService {
    saveCart() {
     localStorage.setItem('cart', JSON.stringify(this.cart));
     console.log(localStorage)
+    
   }
 
   // Load cart data from local storage
@@ -44,7 +54,10 @@ export class CartServiceService {
       this.cart = JSON.parse(savedCart);
     }
   }
-
-
-  
+   
+//**** */
+  updateCartLength() {
+    this.cartLengthSubject.next(this.cart.length);
+  }
+//****** */
 }

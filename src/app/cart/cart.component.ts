@@ -21,11 +21,16 @@ export class CartComponent implements OnInit {
 
     this.cartWithIds = this.cartService.getCart();
     //console.log('in cart route', this.cartWithIds);
-    this.loadCart();
+    this.loadCartWithAllData();
       
   }
 
-  loadCart() {
+
+
+
+  
+
+  loadCartWithAllData() {
 
     const allFoods = this.foodService.getAll();
     this.cartWithDetails = this.cartWithIds.map(id => allFoods.find(food => food.id === id)!);
@@ -34,13 +39,18 @@ export class CartComponent implements OnInit {
 
   
 
+
+
+
+
   removeFromCart(itemId: number): void {
 
     this.cartService.cart = this.cartService.cart.filter(item => item !== itemId);
     this.cartService.saveCart();
     this.cartWithIds = this.cartService.getCart();
-    this.loadCart();
+    this.loadCartWithAllData();
 
+    this.cartService.updateCartLength();
 
   }
 

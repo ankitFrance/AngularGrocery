@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartServiceService } from '../services/cart-service.service';
 
 
 @Component({
@@ -10,7 +11,16 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   
-  constructor() { }
+  cartLength: number = 0;
+
+  constructor(private cartService: CartServiceService) { }
+
+  ngOnInit(): void {
+    this.cartService.cartLength$.subscribe(length => {
+      this.cartLength = length;
+    });
+    
+  }
 
   
 }
