@@ -13,18 +13,17 @@ export class FoodService {
 
       return [
         {
-
-          id : 1,
-          price : 10,
-          name : 'Pizza Simple',
-          favorite : false,
-          star : 4,
-          tags : ['Fastfood', 'Pizza', 'Lunch'],
-          imageURL : '/cheesePizza.jpg',
-          cookTime : 'Approx 30 mins',
-          origins : ['Spain'],
-          ingredients: 'Hey try out this'
-    
+          id: 1,
+          price: 10,
+          name: 'Pizza Simple',
+          favorite: false,
+          star: 4,
+          tags: ['Fastfood', 'Pizza', 'Lunch'],
+          imageURL: '/cheesePizza.jpg',
+          cookTime: 'Approx 30 mins',
+          origins: ['Spain'],
+          ingredients: 'Hey try out this',
+          categ: 'fruits'
         },
 
         {
@@ -37,7 +36,8 @@ export class FoodService {
           imageURL: '/hamburger.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: 'dsdad'
+          ingredients: 'dsdad',
+          categ: 'fruits'
         },
 
         {
@@ -50,7 +50,8 @@ export class FoodService {
           imageURL: '/icecream.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: 'htu'
+          ingredients: 'htu',
+          categ: 'fruits'
         },
 
         {
@@ -63,7 +64,8 @@ export class FoodService {
           imageURL: '/pizza.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -76,7 +78,8 @@ export class FoodService {
           imageURL: '/salad.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -89,7 +92,8 @@ export class FoodService {
           imageURL: '/sandwich.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -102,7 +106,8 @@ export class FoodService {
           imageURL: '/soup.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -115,7 +120,8 @@ export class FoodService {
           imageURL: '/spicyBurger.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -128,7 +134,8 @@ export class FoodService {
           imageURL: '/cheesePizza.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -141,7 +148,8 @@ export class FoodService {
           imageURL: '/hamburger.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -154,7 +162,8 @@ export class FoodService {
           imageURL: '/icecream.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -167,7 +176,8 @@ export class FoodService {
           imageURL: '/pizza.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -180,7 +190,8 @@ export class FoodService {
           imageURL: '/salad.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
@@ -193,7 +204,8 @@ export class FoodService {
           imageURL: '/sandwich.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
@@ -206,7 +218,8 @@ export class FoodService {
           imageURL: '/soup.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
@@ -219,11 +232,12 @@ export class FoodService {
           imageURL: '/spicyBurger.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 1,
+          id: 17,
           price: 10,
           name: 'Pizza Simple',
           favorite: false,
@@ -232,11 +246,12 @@ export class FoodService {
           imageURL: '/cheesePizza.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 2,
+          id: 18,
           price: 8,
           name: 'Hamburger',
           favorite: false,
@@ -245,11 +260,12 @@ export class FoodService {
           imageURL: '/hamburger.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 3,
+          id: 19,
           price: 5,
           name: 'Ice Cream',
           favorite: false,
@@ -258,11 +274,12 @@ export class FoodService {
           imageURL: '/icecream.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 4,
+          id: 20,
           price: 11,
           name: 'Pizza Tomato',
           favorite: false,
@@ -271,11 +288,12 @@ export class FoodService {
           imageURL: '/pizza.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 5,
+          id: 21,
           price: 9,
           name: 'Salad',
           favorite: false,
@@ -284,11 +302,12 @@ export class FoodService {
           imageURL: '/salad.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 6,
+          id: 22,
           price: 7,
           name: 'Sandwich',
           favorite: false,
@@ -297,11 +316,12 @@ export class FoodService {
           imageURL: '/sandwich.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 7,
+          id: 23,
           price: 9,
           name: 'Soup',
           favorite: false,
@@ -310,11 +330,12 @@ export class FoodService {
           imageURL: '/soup.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 8,
+          id: 24,
           price: 14,
           name: 'Spicy Burger',
           favorite: false,
@@ -323,11 +344,12 @@ export class FoodService {
           imageURL: '/spicyBurger.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 1,
+          id: 25,
           price: 10,
           name: 'Pizza Simple',
           favorite: false,
@@ -336,11 +358,12 @@ export class FoodService {
           imageURL: '/cheesePizza.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 2,
+          id: 26,
           price: 8,
           name: 'Hamburger',
           favorite: false,
@@ -349,11 +372,12 @@ export class FoodService {
           imageURL: '/hamburger.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 3,
+          id: 27,
           price: 5,
           name: 'Ice Cream',
           favorite: false,
@@ -362,11 +386,12 @@ export class FoodService {
           imageURL: '/icecream.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 4,
+          id: 28,
           price: 11,
           name: 'Pizza Tomato',
           favorite: false,
@@ -375,11 +400,12 @@ export class FoodService {
           imageURL: '/pizza.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'vegetable'
         },
 
         {
-          id: 5,
+          id: 29,
           price: 9,
           name: 'Salad',
           favorite: false,
@@ -388,11 +414,12 @@ export class FoodService {
           imageURL: '/salad.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'vegetable'
         },
 
         {
-          id: 6,
+          id: 30,
           price: 7,
           name: 'Sandwich',
           favorite: false,
@@ -401,11 +428,12 @@ export class FoodService {
           imageURL: '/sandwich.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'vegetable'
         },
 
         {
-          id: 7,
+          id: 31,
           price: 9,
           name: 'Soup',
           favorite: false,
@@ -414,11 +442,12 @@ export class FoodService {
           imageURL: '/soup.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 8,
+          id: 32,
           price: 14,
           name: 'Spicy Burger',
           favorite: false,
@@ -427,11 +456,12 @@ export class FoodService {
           imageURL: '/spicyBurger.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'vegetable'
         },
 
         {
-          id: 1,
+          id: 33,
           price: 10,
           name: 'Pizza Simple',
           favorite: false,
@@ -440,11 +470,12 @@ export class FoodService {
           imageURL: '/cheesePizza.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 2,
+          id: 34,
           price: 8,
           name: 'Hamburger',
           favorite: false,
@@ -453,11 +484,12 @@ export class FoodService {
           imageURL: '/hamburger.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 3,
+          id: 35,
           price: 5,
           name: 'Ice Cream',
           favorite: false,
@@ -466,11 +498,12 @@ export class FoodService {
           imageURL: '/icecream.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'vegetable'
         },
 
         {
-          id: 4,
+          id: 36,
           price: 11,
           name: 'Pizza Tomato',
           favorite: false,
@@ -479,11 +512,12 @@ export class FoodService {
           imageURL: '/pizza.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 5,
+          id: 37,
           price: 9,
           name: 'Salad',
           favorite: false,
@@ -492,11 +526,12 @@ export class FoodService {
           imageURL: '/salad.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 6,
+          id: 38,
           price: 7,
           name: 'Sandwich',
           favorite: false,
@@ -505,11 +540,12 @@ export class FoodService {
           imageURL: '/sandwich.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'drink'
         },
 
         {
-          id: 7,
+          id: 39,
           price: 9,
           name: 'Soup',
           favorite: false,
@@ -518,11 +554,12 @@ export class FoodService {
           imageURL: '/soup.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'fruits'
         },
 
         {
-          id: 8,
+          id: 40,
           price: 14,
           name: 'Spicy Burger',
           favorite: false,
@@ -531,7 +568,8 @@ export class FoodService {
           imageURL: '/spicyBurger.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: ''
+          ingredients: '',
+          categ: 'vegetable'
         },
   
       

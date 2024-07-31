@@ -24,8 +24,7 @@ export class HomeComponent implements OnInit {
   filteredFoods: Foods[] = [];
   p: number = 1; // Current page number
   itemsPerPage: number = 8; // Number of items per page
-
-
+ 
  
     constructor (private fs: FoodService , private router: Router)  {
 
@@ -46,6 +45,19 @@ filterFoods(): void {
     this.filteredFoods = [...this.foods];
   }
   console.log('Filtered Foods:', this.filteredFoods); // Debugging log
+}
+
+
+filterByCategory(category: string): void {
+  this.filteredFoods = this.foods.filter(food =>
+    food.categ.toLowerCase() === category.toLowerCase()
+  );
+  this.p = 1; // Reset pagination to first page
+}
+
+showAll(): void {
+  this.filteredFoods = [...this.foods];
+  this.p = 1; // Reset pagination to first page
 }
 
 goToDishDetail(id: number) {

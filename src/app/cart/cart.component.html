@@ -1,6 +1,26 @@
 
 
-<div class="ui container">
+<div class="ui container" style="margin-top: 20px;  display: flex; flex-direction: column;" >
+
+  <!--------Card-------------------------------------------------->
+  <div class="ui cards" style="margin-left: auto;">
+    <div class=" card">
+
+      <div class=" content">
+        <div class="header">Grand Total</div>
+        <div class="description">
+          <strong style="color: rgb(6, 45, 239);"> {{ totalPrice() | currency }}</strong>
+        </div>
+      </div>
+      <div class="ui bottom attached button">
+        <i class="credit card outline icon"></i>
+        Proceed to payment
+      </div>
+
+    </div>
+  </div>
+  
+<!--------Card-------------------------------------------------->
 
     <table class="ui inverted black table">
       <thead>
@@ -19,7 +39,10 @@
           <img style="height: 100px;  overflow: hidden; width: 100px;" src="{{item.imageURL}}">
           <td>{{ item.name }}</td>
           <td>{{ item.price }}</td>
-          <td><button class="ui red button" (click)="removeFromCart(item.id)">Remove From cart</button></td>
+          <td>
+            
+          </td>
+          <td><button class="ui red button" (click)="removeFromCart(item.id)">Delete</button></td>
          
         </tr>
       </tbody>

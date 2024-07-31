@@ -9,6 +9,7 @@ export class Foods {
     imageURL! : string;
     cookTime! : string;
     origins! : string[];
-    ingredients! :string
+    ingredients! :string;
+    categ! : string;
 
 }

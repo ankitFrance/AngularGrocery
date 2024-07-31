@@ -15,13 +15,18 @@ export class CartComponent implements OnInit {
 
   cartWithIds: number[] = [];  
   cartWithDetails: Foods[] = [];
+  totalPriceGlobal : number =0; //total price
+  Storetotal: number = 0;
 
   constructor(private cartService: CartServiceService , private foodService: FoodService) {}
   ngOnInit(){
+   
 
     this.cartWithIds = this.cartService.getCart();
-    //console.log('in cart route', this.cartWithIds);
+    
     this.loadCartWithAllData();
+
+    this.storeTotalPrice();
       
   }
 
@@ -34,7 +39,7 @@ export class CartComponent implements OnInit {
 
     const allFoods = this.foodService.getAll();
     this.cartWithDetails = this.cartWithIds.map(id => allFoods.find(food => food.id === id)!);
-    //console.log('Cart Contents with Details:', this.cartWithDetails);
+    console.log('Cart Contents with Details:', this.cartWithDetails);
   }
 
   
@@ -51,7 +56,28 @@ export class CartComponent implements OnInit {
     this.loadCartWithAllData();
 
     this.cartService.updateCartLength();
+    console.log('remaining',this.cartWithIds)
 
   }
+
+
+  totalPrice(): number {
+    let total = 0;
+    for (let i = 0; i < this.cartWithDetails.length; i++) {
+      total += this.cartWithDetails[i].price;
+    }
+   
+    return total; // Returns the total price
+  }
+  
+
+  storeTotalPrice() {
+    
+    this.Storetotal = this.totalPrice();
+    
+  }
+
+ 
+  
 
 }
