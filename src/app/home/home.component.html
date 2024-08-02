@@ -30,8 +30,8 @@
 
 <!--------------------------------------CARD----------------------------------------------------------------->
 
-<div class="ui container" style="max-width: 1200px; margin: 0 auto;">
-<div class="ui link cards custom">
+<div class="ui container" >
+<div class="ui link four cards custom">
     <div *ngFor = "let food of filteredFoods| paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="card">
       <div class="image">
         <img src="{{food.imageURL}}">
