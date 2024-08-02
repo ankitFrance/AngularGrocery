@@ -38,7 +38,7 @@
           <td>{{ item.id }}</td>
           <img style="height: 100px;  overflow: hidden; width: 100px;" src="{{item.imageURL}}">
           <td>{{ item.name }}</td>
-          <td>{{ item.price }}</td>
+          <td>{{ item.price | currency  }}</td>
           
           <td><button class="ui red button" (click)="removeFromCart(item.id)">Delete</button></td>
           

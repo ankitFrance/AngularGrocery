@@ -22,7 +22,7 @@ export class FoodService {
           imageURL: '/apple.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: 'Hey try out this',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -36,7 +36,7 @@ export class FoodService {
           imageURL: '/avocado.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: 'dsdad',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -50,7 +50,7 @@ export class FoodService {
           imageURL: '/banana.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: 'htu',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -64,7 +64,7 @@ export class FoodService {
           imageURL: '/cherry.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -78,7 +78,7 @@ export class FoodService {
           imageURL: '/date.png',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -92,7 +92,7 @@ export class FoodService {
           imageURL: '/durian.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -106,7 +106,7 @@ export class FoodService {
           imageURL: '/grapes.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -120,13 +120,13 @@ export class FoodService {
           imageURL: '/guava.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
         {
           id: 9,
-          price: 111,
+          price: 11,
           name: 'Litchi',
           favorite: false,
           star: 4,
@@ -134,13 +134,13 @@ export class FoodService {
           imageURL: '/litchi.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
         {
           id: 10,
-          price: 84,
+          price: 4,
           name: 'Mango',
           favorite: false,
           star: 3,
@@ -148,13 +148,13 @@ export class FoodService {
           imageURL: '/mango.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
         {
           id: 11,
-          price: 53,
+          price: 5,
           name: 'Nectar',
           favorite: false,
           star: 5,
@@ -162,13 +162,13 @@ export class FoodService {
           imageURL: '/nect.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
         {
           id: 12,
-          price: 151,
+          price: 11,
           name: 'Papaya',
           favorite: false,
           star: 4,
@@ -176,13 +176,13 @@ export class FoodService {
           imageURL: '/papaya.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
         {
           id: 13,
-          price: 94,
+          price: 9,
           name: 'Passion fruit',
           favorite: false,
           star: 5,
@@ -190,13 +190,13 @@ export class FoodService {
           imageURL: '/Passion.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
         {
           id: 14,
-          price: 47,
+          price: 7,
           name: 'Coca Cola',
           favorite: false,
           star: 4,
@@ -204,13 +204,13 @@ export class FoodService {
           imageURL: '/cocoDrink.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
         {
           id: 15,
-          price: 59,
+          price: 5,
           name: 'Coffee',
           favorite: false,
           star: 5,
@@ -218,13 +218,13 @@ export class FoodService {
           imageURL: '/coffeeDrink.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
         {
           id: 16,
-          price: 154,
+          price: 4,
           name: 'Falooda',
           favorite: false,
           star: 4,
@@ -232,13 +232,13 @@ export class FoodService {
           imageURL: '/faloodadrink.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
         {
           id: 17,
-          price: 10,
+          price: 3,
           name: 'Fanta',
           favorite: false,
           star: 4,
@@ -246,7 +246,7 @@ export class FoodService {
           imageURL: '/fantaDrink.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -260,7 +260,7 @@ export class FoodService {
           imageURL: '/lassiDrink.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -274,7 +274,7 @@ export class FoodService {
           imageURL: '/pear.png',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -288,7 +288,7 @@ export class FoodService {
           imageURL: '/per.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -302,7 +302,7 @@ export class FoodService {
           imageURL: '/pine.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -316,7 +316,7 @@ export class FoodService {
           imageURL: '/pom.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -330,7 +330,7 @@ export class FoodService {
           imageURL: '/lemonade.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -344,7 +344,7 @@ export class FoodService {
           imageURL: '/limcaDrink.png',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -358,7 +358,7 @@ export class FoodService {
           imageURL: '/pepsiDrink.jpg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -372,7 +372,7 @@ export class FoodService {
           imageURL: '/roohDrink.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -386,7 +386,7 @@ export class FoodService {
           imageURL: '/sevenupDrink.jpeg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -400,7 +400,7 @@ export class FoodService {
           imageURL: '/tomato.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'vegetable'
         },
 
@@ -414,7 +414,7 @@ export class FoodService {
           imageURL: '/spinach.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'vegetable'
         },
 
@@ -428,7 +428,7 @@ export class FoodService {
           imageURL: '/peas.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'vegetable'
         },
 
@@ -442,7 +442,7 @@ export class FoodService {
           imageURL: '/thumbsDrink.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -456,7 +456,7 @@ export class FoodService {
           imageURL: '/carrot.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'vegetable'
         },
 
@@ -470,7 +470,7 @@ export class FoodService {
           imageURL: '/quince.jpeg',
           cookTime: 'Approx 30 mins',
           origins: ['Spain'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -484,7 +484,7 @@ export class FoodService {
           imageURL: '/rambutan.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -498,7 +498,7 @@ export class FoodService {
           imageURL: '/cauli.jpg',
           cookTime: 'Approx 20 mins',
           origins: ['Turkish'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'vegetable'
         },
 
@@ -512,7 +512,7 @@ export class FoodService {
           imageURL: '/star.jpg',
           cookTime: 'Approx 15 mins',
           origins: ['Italy'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -526,7 +526,7 @@ export class FoodService {
           imageURL: '/beerDrink.jpg',
           cookTime: 'Approx 35 mins',
           origins: ['France'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -540,7 +540,7 @@ export class FoodService {
           imageURL: '/alcoholdrink.jpg',
           cookTime: 'Approx 45 mins',
           origins: ['USA'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'drink'
         },
 
@@ -554,7 +554,7 @@ export class FoodService {
           imageURL: '/straw.jpg',
           cookTime: 'Approx 25 mins',
           origins: ['Russia'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'fruits'
         },
 
@@ -568,7 +568,7 @@ export class FoodService {
           imageURL: '/onion.jpg',
           cookTime: 'Approx 55 mins',
           origins: ['Middle east'],
-          ingredients: '',
+          ingredients: 'Lorem ipsum dolor sit amet',
           categ: 'vegetable'
         },
   
